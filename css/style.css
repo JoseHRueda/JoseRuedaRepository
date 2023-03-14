@@ -1,0 +1,16 @@
+body{ 
+    background-color: darkorchid;
+}
+
+tr:hover{
+    background-color: blueviolet;
+
+}
+
+/*estilo por etiqueta*/
+input, textarea, table{
+    border: 1px double rgb(255, 0, 0);
+    background-color: gold;
+    border-radius: 3px;
+
+}
