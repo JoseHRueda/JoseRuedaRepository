@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validaciones</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <a href="../html/index.html">REGRESAR A LA PAGINA PRINCIPAL</a> <br>
+    <main>
+
+		<form action="" class="formulario" id="formulario">
+			<!-- Usuario -->
+			<div class="formulario__grupo" id="a_usuario">
+				<label for="b_usuario" class="formulario_label">Usuario</label>
+				<div class="formulario_grupoinput">
+					<input type="text" class="formulario_input" name="usuario" id="usuario" placeholder="manuel123">
+				</div>
+				<p class="formulario__inputerror">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<!-- Nombre -->
+			<div class="formulario_grupo" id="a_nombre">
+				<label for="b_nombre" class="formulario_label">Nombre</label>
+				<div class="formulario_grupoinput">
+					<input type="text" class="formulario_input" name="nombre" id="nombre" placeholder="John Doe">
+				</div>
+				<p class="formulario__inputerror">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<!-- Contraseña -->
+			<div class="formulario_grupo" id="a_password">
+				<label for="b_password" class="formulario_label">Contraseña</label>
+				<div class="formulario_grupoinput">
+					<input type="password" class="formulario_input" name="password" id="password">
+					<i class="formulario_validacion-estado fas fa-times-circle"></i>
+				</div>
+				
+			</div>
+
+			<!-- Contraseña 2 -->
+			<div class="formulario_grupo" id="a_password2">
+				<label for="b_password2" class="formulario_label">Repetir Contraseña</label>
+				<div class="formulario_grupoinput">
+					<input type="password" class="formulario_input" name="password2" id="password2">
+					<i class="formulario_validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+			<!-- Correo Electronico -->
+			<div class="formulario_grupo" id="grupo_correo">
+				<label for="correo" class="formulario_label">Correo Electrónico</label>
+				<div class="formulario_grupoinput">
+					<input type="email" class="formulario_input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario_validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_inputerror">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!-- Teléfono -->
+			<div class="formulario_grupo" id="a_telefono">
+				<label for="b_telefono" class="formulario_label">Teléfono</label>
+				<div class="formulario_grupoinput">
+					<input type="text" class="formulario_input" name="telefono" id="telefono" placeholder="4491234567">
+					<i class="formulario_validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario_input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+			<!-- Terminos y Condiciones -->
+			<div class="formulario_grupo" id="grupo_terminos">
+				<label class="formulario_label">
+					<input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario_mensaje" id="formulario_mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario_grupo formulario_grupo-ext-enviar">
+				<button type="submit" class="formulario_ext">Enviar</button>
+				<p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+    <script src="../js/formulario.js"></script>
+
+</form>
+
+
+
+
+
+
+</body>
+</html>
